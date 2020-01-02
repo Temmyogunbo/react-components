@@ -1,6 +1,6 @@
 import { SCREEN, MEDIA } from '../constants';
 
-export const getClassValues = ({props, browserScreenSize}) => {
+export const getClassNames = ({props, browserScreenSize}) => {
   return Object.keys(props).reduce((accum, curr) => {
     switch (true) {
       case SCREEN.small === curr &&
