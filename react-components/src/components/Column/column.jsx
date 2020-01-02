@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { getClassValues } from "../../utils/getClassValues";
-import { SCREEN_SIZE, SCREEN, MEDIA } from "../../constants";
+import { getClassNames } from "../../utils/getClassNames";
+import { SCREEN_SIZE, MEDIA } from "../../constants";
 import classNames from "classnames";
+import PropTypes from 'prop-types';
 
+const ARRAY_OF_NUMBERS = [1,2, 3, 4];
 export const StyledColumn = styled.div`
   &.xs-Grid--full {
     flex: 0 0 100%;
@@ -77,11 +79,18 @@ export const Column = React.forwardRef((props, ref) => {
     return window.removeEventListener("resize", () => onBrowserScreenChange());
   }, [browserScreenSize]);
 
-  const classValues = getClassValues({ props, browserScreenSize });
-  const columnClass = classNames(classValues);
+  const classes = getClassNames({ props, browserScreenSize });
+  const columnClass = classNames(classes);
   return (
     <StyledColumn {...props} className={columnClass} ref={ref}>
       {props.children}
     </StyledColumn>
   );
 });
+
+Column.propTypes = {
+  xs: PropTypes.oneOf(ARRAY_OF_NUMBERS),
+  sm: PropTypes.oneOf(ARRAY_OF_NUMBERS),
+  md: PropTypes.oneOf(ARRAY_OF_NUMBERS),
+  lg: PropTypes.oneOf(ARRAY_OF_NUMBERS),
+}
