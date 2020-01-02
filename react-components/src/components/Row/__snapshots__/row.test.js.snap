@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container render child 1`] = `
+<div
+  className="sc-bwzfXH eACkGl row"
+>
+  <div
+    className="sc-bdVaJa bYFQGJ sm-Grid--full"
+  >
+    first child
+  </div>
+  <div
+    className="sc-bdVaJa bYFQGJ sm-Grid--1of2"
+  >
+    seccond child
+  </div>
+</div>
+`;
+
+exports[`Row render child 1`] = `
+<div
+  className="sc-bwzfXH eACkGl row"
+>
+  <div
+    className="sc-bdVaJa bYFQGJ sm-Grid--full"
+  >
+    first child
+  </div>
+  <div
+    className="sc-bdVaJa bYFQGJ sm-Grid--1of2"
+  >
+    seccond child
+  </div>
+</div>
+`;

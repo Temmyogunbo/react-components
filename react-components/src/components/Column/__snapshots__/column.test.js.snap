@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Column render child 1`] = `
+<div
+  className="sc-bdVaJa bYFQGJ sm-Grid--full"
+>
+  first child
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container render child 1`] = `
+<div
+  className="sc-bdVaJa jIgxNB"
+>
+  <div
+    className="sc-htpNat fNDgiD row"
+  >
+    <div
+      className="sc-bwzfXH hAjPgc sm-Grid--full"
+    >
+      first child
+    </div>
+    <div
+      className="sc-bwzfXH hAjPgc sm-Grid--1of2"
+    >
+      seccond child
+    </div>
+  </div>
+</div>
+`;
