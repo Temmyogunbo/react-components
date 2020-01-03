@@ -93,4 +93,5 @@ Column.propTypes = {
   sm: PropTypes.oneOf(ARRAY_OF_NUMBERS),
   md: PropTypes.oneOf(ARRAY_OF_NUMBERS),
   lg: PropTypes.oneOf(ARRAY_OF_NUMBERS),
+  children: PropTypes.node,
 }
